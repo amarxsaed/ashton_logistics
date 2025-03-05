@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+      html {
+  scroll-behavior: smooth;
+}
+      body{
+        padding: 0;
+        margin: 0;
+       
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+   
+
+      .herosection {
+        height: 100vh;
+        padding: 15px;
+        background-color: rgba(3, 3, 134, 0.719);
+       
+
+        /* background-position: center; */
+
+        display: flex;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+      }
+
+      .container1 {
+        background-color: rgba(245, 237, 237, 0.607);
+      }
+      .card1 {
+        background: white;
+        padding: 20px;
+        flex: 1 1 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: justify;
+      }
+      .logo {
+        font-size: 30px;
+        color: #f97316;
+        padding: 13px;
+      }
+      .conatainerchose {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 60px;
+      }
+      .text {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        text-align: start;
+        /* font-size: 20px; */
+      }
+      h1 {
+        color: rgb(21, 21, 112);
+        font-size: 20px;
+      }
+      .carousalItem img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+      }
+      .carousalItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 20px;
+      }
+      .ourclient {
+        text-align: center;
+      }
+      .mainourclient {
+        height: 400px;
+        padding: 100px;
+        background-color: #1e3a8a;
+        color: white;
+      }
+      .frequentlyask{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .logo1{
+        font-size: 15px;
+        margin: 5px;
+        color: #f97316;
+      }
+    p{
+        font-weight: 300;
+      }
+      .nav1container{
+        display: flex;
+        flex-direction: column;
+      
+      }
+      .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+      }
+      
+      
+      .footer1{
+        list-style: none;
+        width: 200px;
+        
+
+      }
+      .footerlogo{
+        gap: 20px;
+        font-size: 10px;
+        
+color: black;
+      }
+     .links{
+      list-style: none;
+      text-decoration: none;
+     }
+.footer1 li{
+  font-size: 15px;
+  margin-bottom: 15px;
+  
+}
+.carousel-inner{
+  height: 300px;
+
+}
+.end{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.enddiv1{
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+      @media only screen and (max-width: 768px) {
+        .col-6 {
+          width: 100%;
+        }
+        .herosectiondiv1 {
+          display: flex;
+          flex-direction: column;
+        }
+        .herosection {
+          height: 800px;
+        }
+
+        .container1 {
+          margin-top: 100px;
+        }
+       
+      }
+      @media only screen and (max-width: 700px) {
+        .footer1{
+          width: 200px;
+        }
+
+      }
+      @media only screen and (max-width: 400px) {
+        .footer1{
+          width: 100%;
+        }
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex" href="#">
+          <i class="fa-solid fa-truck logo p-2"></i>
+          <h2>Ashton Logistics</h2>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mx-auto d-flex justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/componants/services.html"
+                >Service</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/componants/About.html">About</a>
+            </li>
+            <!-- </li> <li class="nav-item"> -->
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-warning">
+            <i class="fa-solid fa-phone"></i>Call Now
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- herosection -->
+
+    <div class="herosection mb-0 herosectiondiv1 ">
+      <div
+        class="herosectiondiv1 d-flex align-items-center justify-content-center mb-5">
+        <div class="col-6 col-sm text-black p-3">
+          <p class="h1">Earn $2,000+/Week With Loads That Never Hit DAT</p>
+          <h3>
+            <small class="text-white"
+              >PA's #1 Dispatcher for Dry Vans, Reefers & Hotshots. Pay only
+              after you get paid by the broker.</small
+            >
+          </h3>
+
+          <button type="button" class="btn btn-warning mt-2">
+            Get Your First Load →
+          </button>
+          <button type="button" class="btn btn-dark mt-2">Call Us Now</button>
+        </div>
+        <div class="col-6 col-sm">
+          <div class="card p-4 m-1 mb-0">
+            <h1>Calculate Your Earnings</h1>
+            <div class="form-group">
+              <label for="sel1">truck type</label>
+              <select class="form-control" id="sel1">
+                <option>Dry van</option>
+                <option>reefer</option>
+                <option>box truck</option>
+                <option>Hotshot</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="usr">Current Location (ZIP)</label>
+              <input type="text" class="form-control" id="usr" />
+            </div>
+            <div class="form-group mt-2">
+              <select
+                multiple
+                class="form-control"
+                id="exampleFormControlSelect2">
+                <option>All state</option>
+                <option>northeast</option>
+                <option>southeast</option>
+                <option>midwest</option>
+                <option>west</option>
+              </select>
+            </div>
+            <div class="card p-1 mt-2 text-bg-info">
+              <p class="h5">Dry Van: $8,000+/week</p>
+              <p>Fee: 4% after payment</p>
+            </div>
+            <button class="mt-2 p-2 rounded">Get Your First Load →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- why chose ashton logic -->
+    <div class="container">
+      <div class="text">
+        <h1>Why Choose Ashton Logistics?</h1>
+        <p>
+          We're not just another dispatch service. We're your partner in
+          maximizing profits and minimizing hassle.
+        </p>
+      </div>
+      <div class="container conatainerchose">
+        <div class="card1 p-3">
+          <i class="fa-solid logo fa-dollar-sign"></i>
+          <h1>No Upfront Fees</h1>
+          <p>
+            Pay only after you get paid by the broker. We take all the risk so
+            you can focus on driving.
+          </p>
+        </div>
+        <div class="card1">
+          <i class="fa-solid fa-truck logo"></i>
+          <h1>200+ Exclusive Brokers</h1>
+          <p>
+            Access loads from our private network of 200+ major brokers before
+            they hit the loadboards.
+          </p>
+        </div>
+        <div class="card1">
+          <i class="fa-solid logo fa-sheet-plastic"></i>
+          <h1>Paperless Dispatch</h1>
+          <p>
+            We handle all the paperwork while you focus on hauling. Simple,
+            efficient, and hassle-free.
+          </p>
+        </div>
+        <div class="card1">
+          <i class="fa-solid fa-clock logo"></i>
+          <h1>Fast Load Booking</h1>
+          <p>
+            Get load options sent directly to your phone. Accept with a simple
+            text message response.
+          </p>
+        </div>
+        <div class="card1">
+          <i class="fa-solid fa-shield logo"></i>
+
+          <h1>No Forced Dispatch</h1>
+          <p>
+            You have complete freedom to accept or decline any load. No
+            contracts or obligations.
+          </p>
+        </div>
+        <div class="card1">
+          <i class="fa-solid fa-address-book logo"></i>
+          <h1>Dedicated Support</h1>
+          <p>
+            Our team is available 7 days a week to assist with any questions or
+            concerns.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- how it work -->
+
+    <!-- <div class="container-fluid">
+      <h1>how it work</h1>
+      <p>Our simple 4-step process makes getting high-paying loads easier than ever.</p>
+    
+    
+    
+    </div> -->
+
+    <!-- truck type we service -->
+               
+    <!-- what ourclient say -->
+
+    <div
+      id="carouselExample"
+      class="carousel slide container-fluid mb-4 mainourclient h-25">
+      <div class="ourclient ">
+        <h1 class="text-white">What Our Clients Say</h1>
+        <p>
+          Don't just take our word for it. Hear from the truckers who've
+          transformed their businesses with Ashton Logistics.
+        </p>
+      </div>
+      <div class="carousel-inner bg-white text-black">
+        <div class="carousel-item active">
+          <div class="carousalItem mt-2">
+            <img src="pexels-baobab-photos-2149382979-30938750.jpg" alt="" />
+            <h1>David Rodriguez Owner-Operator,</h1>
+            <p>
+              "Since partnering with Ashton Logistics, my weekly earnings have
+              increased by over 30%. Their team finds me loads that pay well
+              above market rates, and I never have to worry about paperwork."
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item bg-white text-black"">
+          <div class="carousalItem">
+            <img src="pexels-baobab-photos-2149382979-30938750.jpg" alt="" />
+            <h1>David Rodriguez</h1>
+            <p>
+              "Since partnering with Ashton Logistics, my weekly earnings have
+              increased by over 30%. Their team finds me loads that pay well
+              above market rates, and I never have to worry about paperwork."
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item bg-white text-black">
+          <div class="carousalItem bg-white text-black"">
+            <img src="pexels-baobab-photos-2149382979-30938750.jpg" alt="" />
+            <h1>David Rodriguez Owner</h1>
+            <p>
+              "Since partnering with Ashton Logistics, my weekly earnings have
+              increased by over 30%. Their team finds me loads that pay well
+              above market rates, and I never have to worry about paperwork."
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- frequently ask question -->
+     <div class="frequentlyask mb-4 p-5  " id="end">
+      <h1>Frequently Asked Questions</h1>
+      <p>Get answers to common questions about our dispatching services.</p>
+      <div class="frequentlyask  g-3 w-100 p-5 ">
+        <div class="accordion  g-5 " id="accordionExample">
+          <div class="accordion-item m-1 ">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                How quickly can I get my first load?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Once we receive your carrier packet, we can typically provide load options within 2-4 hours. If you're in a high-demand area, it could be even faster. We prioritize finding loads that match your preferences and maximize your earning potential.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item m-1">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                What documents do I need to get started?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>To get started, we need your carrier packet which includes: MC Authority Letter, Certificate of Insurance, signed W9 form, and Notice of Assignment from your factoring company (or a voided check if you don't use factoring). Once we receive these documents, we can start finding loads for you immediately.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                I already have a dispatcher. Why should I switch?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Many of our clients initially kept their existing dispatchers while trying our service. They quickly discovered we provided access to higher-paying loads from our exclusive broker network that weren't available on public load boards. Our no-upfront-fee model also means there's zero risk to try our service and compare the results yourself.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                I already have a dispatcher. Why should I switch?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Many of our clients initially kept their existing dispatchers while trying our service. They quickly discovered we provided access to higher-paying loads from our exclusive broker network that weren't available on public load boards. Our no-upfront-fee model also means there's zero risk to try our service and compare the results yourself.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                I already have a dispatcher. Why should I switch?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Many of our clients initially kept their existing dispatchers while trying our service. They quickly discovered we provided access to higher-paying loads from our exclusive broker network that weren't available on public load boards. Our no-upfront-fee model also means there's zero risk to try our service and compare the results yourself.
+              </div>
+            </div>
+          </div>
+           <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                I already have a dispatcher. Why should I switch?
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Many of our clients initially kept their existing dispatchers while trying our service. They quickly discovered we provided access to higher-paying loads from our exclusive broker network that weren't available on public load boards. Our no-upfront-fee model also means there's zero risk to try our service and compare the results yourself.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    <!-- ready to boost your earning -->
+    <div class="p-5 text-center card" style="background-color: rgba(232, 234, 234, 0.415);">
+      <div class="text-center m-3 ">
+        <h1>Truck Types We Service</h1>
+        <p>No matter what type of truck you operate, we have the connections and expertise to maximize your earnings.
+        </p>
+       </div>
+       <ul class="nav nav-pills mb-3 mx-auto" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link text-black active"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true">
+            <i class="fa-solid logo1 fa-truck"></i>Dry van
+          </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link text-black"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false">
+            <i class="fa-solid logo1 fa-asterisk"></i>Reefer
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link text-black"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false">
+            <i class="fa-solid logo1 fa-box"></i>FlatBed
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link text-black"
+            id="pills-About-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-About"
+            type="button"
+            role="tab"
+            aria-controls="pills-About"
+            aria-selected="false">
+            <i class="fa-solid logo1 fa-truck-ramp-box"></i>Box Truck
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link text-black"
+            id="pills-Boxtruck-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-Boxtruck"
+            type="button"
+            role="tab"
+            aria-controls="pills-Boxtruck"
+            aria-selected="false">
+            <i class="fa-solid logo1 fa-box"></i>Box Truck
+          </button>
+        </li>
+      </ul>
+    </div>
+    <nav class="nav1container p-5 m-5 ">
+      
+      
+      <div class="row p-4 d-flex card card2 flex-row shadow-lg">
+        <div class="col-md-6 col-6 p-5">
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab">
+              <h3>   <i class="fa-solid logo fa-truck"></i>Dry Van Dispatching</h3>
+              <p>
+                Our most popular service. We connect dry van owners with
+                high-paying loads from major brokers nationwide, with a focus on
+                consistent, reliable freight.
+              </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab">
+              <h3>  <i class="fa-solid logo fa-asterisk"></i>Reefer Dispatching</h3>
+              <p>
+                Specialized in temperature-controlled freight, our reefer
+                dispatching service ensures you get premium rates for the
+                additional expertise required.
+              </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab">
+              <h3>  <i class="fa-solid logo fa-box"></i>Flatbed Dispatching</h3>
+              <p>
+                For flatbed operators, we source specialized, high-paying loads
+                that maximize your earning potential while minimizing deadhead
+                miles.
+              </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-About"
+              role="tabpanel"
+              aria-labelledby="pills-About-tab">
+              <h3> <i class="fa-solid logo fa-truck-ramp-box"></i>Box Truck Dispatching</h3>
+              <p>
+                Our box truck dispatching focuses on local and regional routes
+                with quick turnarounds and minimal wait times at shippers and
+                receivers.
+              </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-Boxtruck"
+              role="tabpanel"
+              aria-labelledby="pills-Boxtruck-tab">
+              <h3><i class="fa-solid logo fa-bolt"></i>Hotshot Dispatching</h3>
+              <p>
+                Specialized in expedited, time-sensitive freight, our hotshot
+                dispatching service connects you with urgent loads that pay
+                premium rates.
+              </p>
+            </div>
+            <div class=" p-3" >
+              <div class="rounded shadow-lg p-1 bg-white mt-1">
+                <h6>Weekly Earnings: $6,000+</h6>
+                <p>Based on average loads booked through our service</p>
+              </div>
+              <div class="rounded shadow-lg rounded p-1 bg-white mt-1">
+                <h6>Service Fee: 8%</h6>
+                <p>Paid only after you get paid by the broker</p>
+              </div>
+              <div class=" rounded shadow-lg rounded p-1 bg-white mt-1">
+                <h6>Rate Range: $1.50 - $2.00 per mile</h6>
+                <p>Varies by lane and season</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-md-6 col-6  p-3 ">
+            <h1>Popular Routes</h1>
+            <div class="card p-3 mt-4" style="background-color: rgba(232, 234, 234, 0.415);">
+            <div class="rounded p-1 bg-white mt-2 mb-1">
+              <h6>PA to TX</h6>
+           <p>$3.25/mile avg • 1,500 miles</p>
+                
+               
+            </div>
+            <div class="rounded p-1 bg-white mt-1">
+              <h6>IL to GA</h6>
+              <p>$3.00/mile avg • 750 miles</p>
+                
+               
+            </div>
+            <div class="rounded p-1 bg-white mt-1">
+              <h6>CA to WA</h6>
+           <p>$3.50/mile avg • 1,100 miles</p>
+                
+               
+            </div>
+            <div class="rounded p-1 bg-white mt-1">
+              <h6>FL to NY</h6>
+       <p>$2.75/mile avg • 1,200 miles</p>
+                
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <!-- our loading -->
+    <div class="herosection1 mb-0  card mb-4 ">
+      <div
+        class="herosectiondiv1 d-flex align-items-center justify-content-center mb-5">
+        <div class="col-6 col-sm text-black p-3">
+          <h1>Ready to Boost Your Earnings?</h1>
+          <h6>
+            Join hundreds of satisfied truckers who've increased their weekly revenue by partnering with Ashton Logistics.
+          </h6>
+          <p><i class="fa-solid logo1 fa-check-double"></i><span>No upfront fees - pay only after you get paid</span></p>
+          <p><i class="fa-solid logo1 fa-check-double"></i><span>Access to exclusive loads from 200+ brokers</span></p>
+          <p><i class="fa-solid logo1 fa-check-double"></i><span>Complete paperwork management</span></p>
+          <p><i class="fa-solid logo1 fa-check-double"></i><span>NoDedicated dispatcher for your truck</span></p>
+          <p><i class="fa-solid logo1 fa-check-double"></i><span>No forced dispatch - you choose your loads</span></p>
+
+          <button type="button" class="btn btn-warning mt-2">
+            Get Your First Load →
+          </button>
+          <button type="button" class="btn btn-dark mt-2">Call Us Now</button>
+        </div>
+        <div class="col-6 col-sm">
+          <div class="card p-4 m-1 mb-0">
+            <h1>request Load Option</h1>
+           <div class="row">
+            <div class="form-group col-6">
+              <label for="usr">Name</label>
+              <input type="text" class="form-control" id="usr" />
+            </div>
+            <div class="form-group col-6">
+              <label for="usr">Company Name</label>
+              <input type="text" class="form-control" id="usr" />
+            </div>
+           </div>
+           <div class="row">
+            <div class="form-group col-6">
+              <label for="usr">Name</label>
+              <input type="text" class="form-control" id="usr" />
+            </div>
+            <div class="form-group col-6">
+              <label for="usr">Company Name</label>
+              <input type="text" class="form-control" id="usr" />
+            </div>
+           </div>
+           <div class="row">
+            <div class="form-group col-12">
+              <label for="usr">Name</label>
+              <input type="text" class="form-control" id="usr" />
+            </div>
+           </div>
+           <div class="row">
+            <div class="form-group col-6">
+              <label for="sel1">truck type</label>
+              <select class="form-control" id="sel1">
+                <option>Dry van</option>
+                <option>reefer</option>
+                <option>box truck</option>
+                <option>Hotshot</option>
+              </select>
+            </div>
+            <div class="form-group col-6">
+              <label for="usr">Company Name</label>
+              <input type="text" class="form-control" id="usr" />
+            </div>
+           </div>
+
+            
+           
+            
+            <button class="mt-2 p-2 rounded">Get Your First Load →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+     <div class="footer p-3">
+      
+      <div class="footer1 ">
+        <li><a class="text-decoration-none text-black" href=""><i class="fa-solid logo1 fa-truck-front"></i><span class="footerashton">Ashton logistic</span></a></li>
+        <p >Premium truck dispatching services with no upfront fees. We connect you with exclusive loads from 200+ brokers nationwide.</p>
+        <div class="d-flex  footerlogo ">
+          <li ><a href=""><i class="fa-brands footerlogo fa-facebook"></i></a></li>
+          <li><a href=""><i class="fa-solid footerlogo fa-link-slash"></i></a></li>
+          <li><a href=""><i class="fa-brands footerlogo fa-twitter"></i></a></li>
+          <li><a href=""><i class="fa-brands footerlogo fa-square-instagram"></i></a></li>
+        </div>
+      </div>
+   
+      <div class="footer1    ">
+        <h3>Quick links</h3>
+        <li><a class="links" href="">Home</a></li>
+        <li><a  class="links" href="">Services</a></li>
+        <li><a  class="links" href="">About Us</a></li>
+
+        <li><a  class="links" href="">Blog</a></li>
+        <li><a  class="links" href="">Contact</a></li>
+
+        
+      </div>
+      <div class="footer1">
+        <h3>Our Services </h3>
+        <li><a class="links" href="">Dry Van Dispatching</a></li>
+        <li><a  class="links" href="">Reefer Dispatching</a></li>
+        <li><a  class="links" href="">Flatbed Dispatching</a></li>
+
+        <li><a  class="links" href="">Box Truck Dispatching</a></li>
+        <li><a  class="links" href="">Hotshot Dispatching</a></li>
+
+      </div>
+      <div class="footer1 ">
+        <h3>Contact US </h3>
+        <li><i class="fa-solid fa-location-dot footerlogo"></i><span>hwfeiuhwhefiuw</span></li>
+        <li><i class="fa-solid fa-phone-volume"></i><span>(555) 123-4567</span></li>
+        <li><i class="fa-solid fa-message"></i><span>info@ashtonlogistics.com</span></li>
+
+        
+
+      </div>
+     </div>
+     <div class="end">
+      <p> © 2025 Ashton Logistics. All rights reserved.</p>
+      <div class="enddiv1">
+          <li><a href=""></a>Privacy Policy</li>
+          <li><a href="">
+              Terms of Service</a></li>
+          <li><a href=""></a>Privacy Policy</li>
+      </div>
+  </div>
+  </body>
+</html>
