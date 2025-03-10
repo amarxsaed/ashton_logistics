@@ -44,6 +44,142 @@
          .carddata1{
             
          }
+
+         .paragrapg{
+height: 430px;
+
+overflow: hidden;
+         }
+
+  .innercard{
+    height: 150px;
+  }
+  .About{
+    display: flex;
+    flex-wrap: wrap;
+  }    .card1 {
+        background: white;
+        width: 200px;
+        padding: 20px;
+        flex: 1 1 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: justify;
+      }
+       .conatainerchose {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: px;
+      }
+      .text {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        text-align: start;
+        /* font-size: 20px; */
+      }
+      .heading{
+        color: #F97316;
+      }
+      .end{
+    background-color: #1e3a8a;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+}
+.enddiv1{
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.fullfooter{
+    background-color: #1e3a8a;
+    color: white;
+}
+.fulltable{
+  padding: 0px 80px 0px 80px;
+}
+.footerlogo{
+    color: #F97316;
+    margin: 10px;
+    font-size: 20px;
+}
+.footerlogo1{
+    color: black;
+    margin: 7px;
+    font-size: 30px;
+   
+   
+ 
+}
+.footerashton{
+    font-size: 3vw;
+    font-weight: 600;
+}
+.footer1 li{
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: white;
+  
+  
+}
+.footer1 li a{
+  color: white;
+  
+  
+}
+.footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+      }
+      
+      
+      .footer1{
+        list-style: none;
+        width: 200px;
+        
+
+      }
+      .footerlogo{
+        gap: 20px;
+        font-size: 10px;
+      }
+      .logo {
+        font-size: 18px;
+        margin: 5px;
+        color: #f97316;
+      }
+   
+   
+  @media only screen and (max-width: 830px) {
+    .about1{
+      width: 90%;
+      margin: 0px;
+      padding: 0px;
+      margin: auto;
+    }
+    .about2{
+      width: 90%;
+      margin: 0px;
+      padding: 0px;
+      margin: auto;
+    }
+    .innercard{
+      height: 180px;
+    }
+       
+      
+    }
     </style>
 </head>
 <body>
@@ -67,21 +203,21 @@
             <ul
               class="navbar-nav me-auto mb-2 mx-auto d-flex justify-content-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#end">Home</a>
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="/componants/services.html"
                   >Service</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                <a class="nav-link active" aria-current="page" href="/componants/Blog.html">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
+                <a class="nav-link active" aria-current="page" href="/componants/About.html">About</a>
               </li>
               <!-- </li> <li class="nav-item"> -->
-              <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              <a class="nav-link active" aria-current="page" href="/componants/contact.html">Contact</a>
               </li>
             </ul>
             <button type="button" class="btn btn-warning">
@@ -104,57 +240,30 @@
       </div>
       <!-- About -->
 
-      <div class="row p-3 About">
-        <div class="col-5">
+      <div class="row About">
+        <div class="col-6 p-5 about1">
             <h1 class="text-center">Our Story
             </h1>
-            <p>Founded in 2021 and headquartered in Bensalem, Pennsylvania, Ashton Logistics was born out of a deep understanding of the trucking industry’s challenges. Our founders, who spent years working on the road, witnessed firsthand how traditional dispatch services burden carriers with high upfront fees, forced dispatch, and limited broker connections—leaving truckers with lower earnings and fewer opportunities.<br><br>
+            <p class="text-center p-3 paragrapg">Founded in 2021 and headquartered in Bensalem, Pennsylvania, Ashton Logistics was born out of a deep understanding of the trucking industry’s challenges. Our founders, who spent years working on the road, witnessed firsthand how traditional dispatch services burden carriers with high upfront fees, forced dispatch, and limited broker connections—leaving truckers with lower earnings and fewer opportunities.<br><br>
 
                 Determined to change the status quo, we built Ashton Logistics on a simple yet powerful mission: to transform truck dispatching by putting carriers first. We pioneered a “pay after you get paid” model that removes financial risk from your journey, and we’ve invested heavily in forging relationships with over 200 trusted brokers nationwide.<br><br> With most of our team based right here in the US, we efficiently handle critical tasks like Highway and RMIS packets—ensuring that every requirement is met without compromise. Today, hundreds of carriers trust us to connect them with exclusive, high-paying loads, because we believe our success is measured by your success.
                 </p>
         </div>
-        <div class="col-7 g-5">
-            <h1 class="text-center">
+        <div class="col-6 g-4 p-4 about2">
+            <h1 class="text-center mb-5 text-center">
                Ashton logistics at a Glance
             </h1>
-            <!-- <div class="row text-center">
-                <div class="col-6 card text-center ">
-                    <p class="text-center  cardlogo"><i class="fa-solid fa-location-dot"></i></p>
-                    <h2>Head quarters</h2>
-                    <p>Bensalem, Pennsylvania</p>
-                </div>
-                <div class="col-6 card">
-                        <p class="text-center  cardlogo"><i class="fa-solid fa-medal"></i></p>
-                        <h2>Founded</h2>
-                        <p>2018</p>
-                    
-                </div>
-
-            </div>
-            <div class="row carddata1">
-                <div class="col-6 card   ">
-                    <p class="text-center cardlogo"><i class="fa-solid fa-network-wired"></i></p>
-                    <h2>Broker Network</h2>
-                    <p>200+ Direct Relationshipsa</p>
-                </div>
-                <div class="col-6 card">
-                        <p class="text-center  cardlogo"><i class="fa-solid fa-arrow-trend-up"></i></p>
-                        <h2>Average Weekly Earningss</h2>
-                        <p>$7,000 - $9,000 per truck</p>
-                    
-                </div>
-
-            </div> -->
+           
             <div class="row text-center">
                 <div class="col-6">
-                    <div class="card p-4 border-3 shadow-lg">
+                    <div class="card p-2 innercard text-center">
                         <p class="text-center cardlogo"><i class="fa-solid fa-location-dot fa-2x"></i></p>
                         <h2>Headquarters</h2>
                         <p>Bensalem, Pennsylvania</p>
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="card p-4 border-3 shadow-lg">
+                    <div class="card p-3 innercard text-center">
                         <p class="text-center cardlogo"><i class="fa-solid fa-medal fa-2x"></i></p>
                         <h2>Founded</h2>
                         <p>2018</p>
@@ -164,14 +273,14 @@
             
             <div class="row mt-3">
                 <div class="col-6">
-                    <div class="card p-4 border-3 shadow-lg">
+                    <div class="card p-3 innercard text-center">
                         <p class="text-center cardlogo"><i class="fa-solid fa-network-wired fa-2x"></i></p>
                         <h5>Broker Network</h5>
                         <p>200+ Direct Relationships</p>
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="card p-4 border-3 shadow-lg">
+                    <div class="card p-2 innercard text-center">
                         <p class="text-center cardlogo"><i class="fa-solid fa-arrow-trend-up fa-2x"></i></p>
                         <h5>Average Weekly Earnings</h5>
                         <p>$7,000 - $9,000 per truck</p>
@@ -182,5 +291,170 @@
         </div>
 
       </div>
+      <div class="container">
+        <div class="text">
+          <h1>Our Values</h1>
+          <p class="text-center">Our commitment to excellence is driven by core values that guide every decision we make</p>
+        </div>
+        <div class="container conatainerchose">
+          <div class="card1 p-3">
+            
+            <h5>Integrity & Transparency
+            </h5>
+            <p>
+              We operate with honesty, clear communication, and a commitment to ethical practices—so you always know exactly where you stand.
+            </p>
+          </div>
+          <div class="card1">
+           
+            <h5>Carrier-Centric Approach</h5>
+            <p>
+              Your success is our success. We place carriers at the heart of everything we do, ensuring that every load, every decision, and every partnership benefits you.
+
+            </p>
+          </div>
+          <div class="card1">
+          
+            <h5>Innovation & Technology
+            </h5>
+            <p>
+              By leveraging cutting-edge, paperless dispatch solutions and real-time tracking, we continually improve efficiency and optimize load matching.
+
+            </p>
+          </div>
+          <div class="card1">
+           
+            <h5>Reliability & Accountability
+            </h5>
+            <p>
+              We stand by our promise of dependable service. From start to finish, we take full responsibility for ensuring that your operations run smoothly.
+
+
+            </p>
+          </div>
+          <div class="card1">
+           
+
+            <h5>Collaborative Partnerships</h5>
+            <p>
+              We build lasting relationships with brokers, carriers, and industry experts to create a network that drives mutual growth and success.
+
+
+            </p>
+          </div>
+          <div class="card1">
+          
+            <h5>Continuous Improvement
+            </h5>
+            <p>
+              We are committed to evolving with the industry—listening to carrier feedback, embracing new technologies, and refining our processes to serve you better.
+
+
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- meet our team -->
+      <div>
+        <div class="text-center mt-5 mb-5 ">
+          <h1>Meet Our Team
+          </h1>
+          <p>
+            Our experienced team of dispatchers and logistics professionals is dedicated to your success
+          </p>
+
+          <div class="meetourteam d-flex justify-content-center ">
+
+            <div class="card m-1 p-2 " style="width: 20rem;">
+              <img src="/pexels-jari-van-de-vel-405355698-18344969.jpg" class="card-img-top" alt="...">
+              <div class="text-start">
+                <h5 class="text-start">John Smith</h5>
+                <h6 class="heading">Founder & CEO</h6>
+                <p class="text-start">With over 15 years of experience in the trucking industry, John founded Ashton Logistics to revolutionize how dispatching services operate</p>
+               
+              </div>
+            </div>
+            <div class="card m-1 p-2" style="width: 20rem;">
+              <img src="/pexels-jari-van-de-vel-405355698-18344969.jpg" class="card-img-top" alt="...">
+              <div class="text-start">
+                <h5 class="text-start">Sarah Johnson</h5>
+                <h6 class="heading">Head of Operations</h6>
+                <p class="text-start">Sarah oversees our day-to-day operations, ensuring that avery carrier receives exceptional service and support.</p>
+               
+              </div>
+            </div>
+            <div class="card m-1 p-2" style="width: 19rem;">
+              <img src="/pexels-jari-van-de-vel-405355698-18344969.jpg" class="card-img-top" alt="...">
+              <div class="text-start">
+                <h5 class="text-start">Michael Rodriguez</h5>
+                <h6 class="heading">Lead Dispatcher</h6>
+                <p class="text-start">Michael leads our team of dispatchers, leveraging his extensive broker relationships to secure the best loads for our carriers.</p>
+               
+              </div>
+            </div>
+        
+            </div>
+          </div>
+        </div>
+        <div class="fullfooter">
+
+    <div class="footer p-3">
+  
+      
+        <div class="footer1 ">
+          <li><a class="text-decoration-none text-black" href=""><i class="fa-solid footerlogo fa-truck-front"></i><span class="footerashton ">Ashton Logistics</span></a></li>
+          <p >Premium truck dispatching services with no upfront fees. We connect you with exclusive loads from 200+ brokers nationwide.</p>
+          <div class="d-flex  footerlogo1 ">
+            <li ><a href=""><i class="fa-brands footerlogo1 fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa-solid footerlogo1 fa-link-slash"></i></a></li>
+            <li><a href=""><i class="fa-brands footerlogo1 fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands footerlogo1 fa-square-instagram"></i></a></li>
+          </div>
+        </div>
+     
+        <div class="footer1    ">
+          <h3>Quick links</h3>
+          <li><a class="links" href="">Home</a></li>
+          <li><a  class="links" href="">Services</a></li>
+          <li><a  class="links" href="">About Us</a></li>
+  
+          <li><a  class="links" href="">Blog</a></li>
+          <li><a  class="links" href="">Contact</a></li>
+  
+          
+        </div>
+        <div class="footer1">
+          <h3>Our Services </h3>
+          <li><a class="links" href="">Dry Van Dispatching</a></li>
+          <li><a  class="links" href="">Reefer Dispatching</a></li>
+          <li><a  class="links" href="">Flatbed Dispatching</a></li>
+  
+          <li><a  class="links" href="">Box Truck Dispatching</a></li>
+          <li><a  class="links" href="">Hotshot Dispatching</a></li>
+  
+        </div>
+        <div class="footer1 ">
+          <h3>Contact US </h3>
+          <li><i class="fa-solid fa-location-dot footerlogo"></i><span>hwfeiuhwhefiuw</span></li>
+          <li><i class="fa-solid  footerlogo fa-phone-volume"></i><span>(555) 123-4567</span></li>
+          <li><i class="fa-solid  footerlogo fa-message"></i><span>info@ashtonlogistics.com</span></li>
+  
+          
+  
+        </div>
+       </div>
+       <hr>
+       <div class="end">
+        <p> © 2025 Ashton Logistics. All rights reserved.</p>
+        <div class="enddiv1">
+           
+            <li><a href="">
+                Terms of Service</a></li>
+            <li><a href="">Privacy Policy</a></li>
+        </div>
+    </div>
+   </div>
+      
 </body>
 </html>
