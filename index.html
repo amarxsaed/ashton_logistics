@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+   <link rel="icon" href="/assets/website_logo.jpg">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
@@ -19,31 +19,59 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <style>
+<title>Ashtonlogistics</title>
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap');
       html {
   scroll-behavior: smooth;
 }
       body{
         padding: 0;
         margin: 0;
-       
-       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       }
+    
+     
    
 
       .herosection {
-        height: 100vh;
-        padding: 15px;
-        background-color: rgba(3, 3, 134, 0.719);
-       
+        
+        padding-top: 120px;
+        background: 
+  linear-gradient(rgba(23, 11, 59, 0.966), rgba(0, 0, 0, 0.3)), 
+  url("https://cdn.pixabay.com/photo/2017/06/11/10/46/truck-2391940_1280.jpg");
+background-size: cover;
+background-position: center;
 
-        /* background-position: center; */
+
+background-attachment: fixed;
 
         display: flex;
 
-        background-position: center;
+       
         background-repeat: no-repeat;
-        /* background-attachment: fixed; */
+      }
+     
+     
+      .callNow{
+        background-color:#FEA13B;
+        padding: 10px 30px;
+        gap: 10px;
+        font-weight: 500;
+      
+      }
+      .nav-link{
+       font-family: Orbitron;
+       font-size: large;
+      }
+      .CallUsNow{
+        border: 2px solid white;
+        color: white;
+      }
+      .CallUsNow:hover{
+        background-color: white;
+        color: black;
       }
 
       .container1 {
@@ -68,6 +96,7 @@
         justify-content: center;
         gap: 20px;
         padding: 60px;
+        
       }
       .text {
         text-decoration: none;
@@ -79,9 +108,13 @@
         text-align: start;
         /* font-size: 20px; */
       }
-      h1 {
+      h5,h1{
         color: rgb(21, 21, 112);
+        font-family: Roboto Slab;
        
+      }
+      h2{
+        font-family: Roboto Slab;
       }
       .carousalItem img {
         height: 100px;
@@ -118,7 +151,8 @@
         color: #f97316;
       }
     p{
-        font-weight: 300;
+        font-family: Roboto Slab;
+       
       }
       .nav1container{
         display: flex;
@@ -129,6 +163,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        color: white;
+        background-color: black;
         
       }
       
@@ -136,14 +172,17 @@
       .footer1{
         list-style: none;
         width: 200px;
+        font-family: Orbitron;
+        font-weight: 600;
+
         
 
       }
       .footerlogo{
         gap: 20px;
-        font-size: 10px;
-        
-color: black;
+        font-size: 25px;
+        color: white;
+
       }
      .links{
       list-style: none;
@@ -152,6 +191,13 @@ color: black;
 .footer1 li{
   font-size: 15px;
   margin-bottom: 15px;
+  color: #F9FAFB;
+  
+}
+.footer1 li a{
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #F9FAFB;
   
 }
 .carousel-inner{
@@ -164,6 +210,7 @@ color: black;
   padding: 15px;
   align-items: center;
   flex-wrap: wrap;
+  background-color: #FEA13B;
 }
 .enddiv1{
   list-style: none;
@@ -172,10 +219,12 @@ color: black;
 }
 
 
-img {
-  width: 100px;
-  height: 100px;
+.slideimg {
+  width: 200px;
+  height: 200px;
   animation: scroll 60s linear infinite;
+  padding: 200px;
+  border-radius: 150px;
 }
 
 .slide-track {
@@ -186,10 +235,21 @@ img {
 }
 
 .slider {
-  margin-top: 70px;
-  background-color: whitesmoke;
+  
+  background-color: white;
   padding: 5em 2em;
 }
+.carousel-control-prev{
+  margin-top: 100px;
+  
+  padding-right: 20px;
+}
+.carousel-control-next{
+  margin-top: 100px;
+  padding-left: 20px;
+  
+}
+
 
 @keyframes scroll {
   0% {transform: translateX(0);}
@@ -202,9 +262,10 @@ img {
         .herosectiondiv1 {
           display: flex;
           flex-direction: column;
+          padding-top: 41px;
         }
         .herosection {
-          height: 800px;
+          height: 180vh;
         }
 
         .container1 {
@@ -218,9 +279,21 @@ img {
         }
 
       }
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 660px) {
         .footer1{
           width: 100%;
+        }
+        .herosection {
+          height: 200vh;
+        }
+
+      }
+      @media only screen and (max-width: 450px) {
+        .footer1{
+          width: 100%;
+        }
+        .herosection {
+          height: 230vh;
         }
 
       }
@@ -229,14 +302,12 @@ img {
 
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary  w-100">
+    <nav class="navbar navbar-expand-lg  w-100 position-fixed   z-2" style=" background-color:black;">
       <div class="container-fluid">
-        <a class="navbar-brand d-flex" href="#">
-          <i class="fa-solid fa-truck logo p-2"></i>
-          <h2>Ashton Logistics</h2>
-        </a>
+       <img src="/assets/website_logo.jpg" height="70px" width="100px" alt="">
+       
         <button
-          class="navbar-toggler"
+          class="navbar-toggler callNow "
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -245,57 +316,89 @@ img {
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
           <ul
-            class="navbar-nav me-auto mb-2 mx-auto d-flex justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            class="navbar-nav me-auto mb-2 mx-auto d-flex justify-content-center  " >
+            <li class="nav-item ">
+              <a class="nav-link active text-white " aria-current="page" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/componants/services.html"
+              <a class="nav-link active text-white " aria-current="page" href="/componants/services.html"
                 >Service</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/componants/Blog.html">Blog</a>
+              <a class="nav-link active text-white" aria-current="page" href="/componants/Blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/componants/About.html">About</a>
+              <a class="nav-link active text-white" aria-current="page" href="/componants/About.html">About</a>
             </li>
-            <!-- </li> <li class="nav-item"> -->
-            <a class="nav-link active" aria-current="page" href="/componants/contact.html">Contact</a>
+           <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="/componants/contact.html">Contact</a>
             </li>
           </ul>
-          <button type="button" class="btn btn-warning">
-            <i class="fa-solid fa-phone"></i>Call Now
+          <button type="button" class="btn btn-light callNow">
+            <i class="fa-solid fa-phone px-2"></i>Call Now
           </button>
         </div>
       </div>
     </nav>
     <!-- herosection -->
 
-    <div class="herosection mb-0 herosectiondiv1 ">
+    <div class="herosection mb-0 herosectiondiv1  ">
       <div
-        class="herosectiondiv1 d-flex align-items-center justify-content-center mb-5">
+        class="herosectiondiv1 m-3 d-flex align-items-center justify-content-center mb-5">
         <div class="col-6 col-sm text-black p-3">
-          <p class="h1">Earn $2,000+/Week With Loads That Never Hit DAT</p>
-          <h3>
-            <small class="text-white"
-              >PA's #1 Dispatcher for Dry Vans, Reefers & Hotshots. Pay only
-              after you get paid by the broker.</small
-            >
-          </h3>
+        <h1 style="color: aliceblue;font-size: 4vw;
+        ">Earn 30% More with Loads That Never Hit DAT</h1>
+          <h5 class="text-white">US #1 Dispatcher for Dry Vans, Reefers, & Flatbeds</h5>
+         <h6 class="text-secondary">Access exclusive loads from our network of 200+ brokers. You only pay after you get paid by the broker.</h6>
 
-          <button type="button" class="btn btn-warning mt-2">
-            Get Your First Load →
-          </button>
-          <button type="button" class="btn btn-dark mt-2">Call Us Now</button>
+          <div class="mb-2">
+            <button type="submit"  class="btn btn-light callNow mt-2">Get Your First Load →</button>
+            <button type="button" class="btn CallUsNow mt-2  px-5 py-2">Call Us Now</button>
+          </div>
+          <div class="d-flex flex-wrap ">
+            <p class="card p-2 text-center m-2   opacity-50  ">5+ Years Experience</p>
+            <p class="card p-2 text-center m-2  opacity-50">Multiple Loadboards Access</p>
+            <p class="card p-2 text-center m-2  opacity-50">200+ Broker Network</p>
+          </div>
         </div>
-        <div class="col-6 col-sm">
+        <div class="col-6">
           <div class="card p-4 m-1 mb-0">
-            <h1>Calculate Your Earnings</h1>
-            <div class="form-group">
-              <label for="sel1">truck type</label>
+            <h1 class="text-center">Request Load Options</h1>
+            <hr>
+          <div class="row">
+            <div class="form-group col-6">
+              <label for="usr"><b>Name:</b></label>
+              <input type="name" placeholder="John doe" class="form-control" id="usr">
+            </div>
+            <div class="form-group col-6">
+              <label for="usr"><b>Company Name:</b></label>
+              <input type="text" placeholder="ds" class="form-control" id="usr">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-6">
+              <label for="usr"><b>MC Number:</b></label>
+              <input type="text" placeholder="dsvs" class="form-control" id="usr">
+            </div>
+             <div class="mb-3 col-6">
+              <label for="exampleInputEmail1" class="form-label"><b>Phone Number</b></label>
+              <input type="phone" placeholder="+923"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+            </div>
+          </div>
+          <div class="mb-3 ">
+            <label for="exampleInputEmail1" class="form-label"><b>Email address</b></label>
+            <input type="email" class="form-control" placeholder="abcde@gmail.com" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+          </div>
+          
+          
+          <div class="row">
+            <div class="form-group col-6">
+              <label for="sel1"><b>truck type</b></label>
               <select class="form-control" id="sel1">
                 <option>Dry van</option>
                 <option>reefer</option>
@@ -303,27 +406,29 @@ img {
                 <option>Hotshot</option>
               </select>
             </div>
-            <div class="form-group">
-              <label for="usr">Current Location (ZIP)</label>
-              <input type="text" class="form-control" id="usr" />
+            <div class="form-group col-6">
+              <label for="usr"><b>Current Location (ZIP)</b></label>
+              <input type="text" placeholder="12345" class="form-control" id="usr" />
             </div>
-            <div class="form-group mt-2">
-              <select
-                multiple
-                class="form-control"
-                id="exampleFormControlSelect2">
-                <option>All state</option>
-                <option>northeast</option>
-                <option>southeast</option>
-                <option>midwest</option>
-                <option>west</option>
-              </select>
-            </div>
-            <div class="card p-1 mt-2 text-bg-info">
-              <p class="h5">Dry Van: $8,000+/week</p>
-              <p>Fee: 4% after payment</p>
-            </div>
-            <button class="mt-2 p-2 rounded">Get Your First Load →</button>
+        
+          </div>
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+           
+            
+            
+            <button type="submit"  class="btn btn-light callNow mt-2">Get Your First Load →</button>
+            <p>By submitting this form, you agree to our <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>.</p>
+            
+ 
           </div>
         </div>
       </div>
@@ -337,117 +442,117 @@ img {
           <div class="slider">
             <div class="slide-track">
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
+                <img class="slideimg card p-2"  src="https://img.freepik.com/premium-vector/truck-vector-truck-logo-icon-car-cargo-cabin-silhouette-white-background_1241836-4752.jpg?uid=R189727522&ga=GA1.1.2079683781.1740909118&semt=ais_hybrid" alt="">
               </div>
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
+                <img class="slideimg card p-2" src="https://img.freepik.com/premium-vector/trucking-logo-vector-illustration_681147-932.jpg?w=1060" alt="">
               </div>
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
+                <img class="slideimg card p-2" src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
               </div>
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
+                <img class="slideimg card p-2" src="https://img.freepik.com/premium-vector/trucking-vector-illustration-automotive-logo_681147-583.jpg?w=1060" alt="">
               </div>
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
+                <img class="slideimg card p-2" src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
               </div>
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
+                <img class="slideimg card p-2" src="https://img.freepik.com/premium-vector/trucking-company-ready-made-logo-template-emblem-set-semi-truck-18-wheeler-freight-badge-logo-vecto_289688-309.jpg?uid=R189727522&ga=GA1.1.2079683781.1740909118&semt=ais_hybrid" alt="">
               </div>
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
+                <img class="slideimg card p-2" src="https://img.freepik.com/premium-vector/trucking-logo-vector-illustration_681147-932.jpg?uid=R189727522&ga=GA1.1.2079683781.1740909118&semt=ais_hybrid" alt="">
               </div>
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
+                <img class="slideimg card p-2" src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
               </div>
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
+                <img class="slideimg card p-2" src="https://img.freepik.com/free-vector/gradient-transport-logo-template_23-2151353006.jpg?uid=R189727522&ga=GA1.1.2079683781.1740909118&semt=ais_hybrid" alt="">
               </div>
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
+                <img class="slideimg card p-2" src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
               </div>
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
+                <img class="slideimg card p-2" src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
               </div>
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
+                <img class="slideimg card p-2" src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
               </div>
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
+                <img class="slideimg card p-2" src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="">
               </div>
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
+                <img class="slideimg card p-2" src="https://cdn.freebiesupply.com/images/large/2x/starbucks-logo-black-and-white.png" alt="">
               </div>
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
+                <img class="slideimg card p-2" src="https://cdn.freebiesupply.com/logos/large/2x/general-electric-black-logo-png-transparent.png" alt="">
               </div>
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
+                <img class="slideimg card p-2" src="https://cdn.freebiesupply.com/logos/large/2x/nfl-logo-png-transparent.png" alt="">
               </div>
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/mercedes-benz-6-logo-png-transparent.png" alt="">
+                <img class="slideimg card p-2" src="https://img.freepik.com/premium-vector/towing-truck-logo_636967-431.jpg?uid=R189727522&ga=GA1.1.2079683781.1740909118&semt=ais_hybrid" alt="">
               </div>
               <div class="slide">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/hogwarts-logo-png-transparent.png" alt="">
+                <img class="slideimg card p-2" src="https://img.freepik.com/premium-vector/truck-delivery-truck-semi-truck-isolated-logo-vector_498574-176.jpg?uid=R189727522&ga=GA1.1.2079683781.1740909118&semt=ais_hybrid" alt="">
               </div>
             </div>
           </div>
       </div>
      </div>
     <!-- why chose ashton logic -->
-    <div class="container">
-      <div class="text">
-        <h1>Why Choose Ashton Logistics?</h1>
+    <div class="w-100" style="background-color: #F9FAFB;">
+      <div class="text-center" style="padding-top: 30px;">
+        <h1 >Why Choose Ashton Logistics?</h1>
         <p>
           We're not just another dispatch service. We're your partner in
           maximizing profits and minimizing hassle.
         </p>
       </div>
       <div class="container conatainerchose">
-        <div class="card1 p-3">
+        <div class="card1  text-center ">
           <i class="fa-solid logo fa-dollar-sign"></i>
-          <h1>No Upfront Fees</h1>
+          <h5>No Upfront Fees</h5>
           <p>
             Pay only after you get paid by the broker. We take all the risk so
             you can focus on driving.
           </p>
         </div>
-        <div class="card1">
+        <div class="card1  text-center">
           <i class="fa-solid fa-truck logo"></i>
-          <h1>200+ Exclusive Brokers</h1>
+          <h5>200 Exclusive Brokers</h5>
           <p>
             Access loads from our private network of 200+ major brokers before
             they hit the loadboards.
           </p>
         </div>
-        <div class="card1">
+        <div class="card1  text-center">
           <i class="fa-solid logo fa-sheet-plastic"></i>
-          <h1>Paperless Dispatch</h1>
+          <h5>Paperless Dispatch</h5>
           <p>
             We handle all the paperwork while you focus on hauling. Simple,
             efficient, and hassle-free.
           </p>
         </div>
-        <div class="card1">
+        <div class="card1  text-center">
           <i class="fa-solid fa-clock logo"></i>
-          <h1>Fast Load Booking</h1>
+          <h5>Fast Load Booking</h5>
           <p>
             Get load options sent directly to your phone. Accept with a simple
             text message response.
           </p>
         </div>
-        <div class="card1">
+        <div class="card1  text-center">
           <i class="fa-solid fa-shield logo"></i>
 
-          <h1>No Forced Dispatch</h1>
+          <h5>No Forced Dispatch</h5>
           <p>
             You have complete freedom to accept or decline any load. No
             contracts or obligations.
           </p>
         </div>
-        <div class="card1">
+        <div class="card1  text-center">
           <i class="fa-solid fa-address-book logo"></i>
-          <h1>Dedicated Support</h1>
+          <h5>Dedicated Support</h5>
           <p>
             Our team is available 7 days a week to assist with any questions or
             concerns.
@@ -472,7 +577,7 @@ img {
 
     <div
       id="carouselExample"
-      class="carousel slide container-fluid mb-4 mainourclient h-25">
+      class="carousel slide container-fluid mb-4 mainourclient h-25 ">
       <div class="ourclient ">
         <h1 class="text-white">What Our Clients Say</h1>
         <p>
@@ -480,38 +585,55 @@ img {
           transformed their businesses with Ashton Logistics.
         </p>
       </div>
-      <div class="carousel-inner bg-white text-black">
+      <div class="carousel-inner bg-white text-black rounded ">
         <div class="carousel-item active">
           <div class="carousalItem mt-2">
-            <img src="pexels-baobab-photos-2149382979-30938750.jpg" alt="" />
-            <h1>David Rodriguez Owner-Operator,</h1>
-            <p>
-              "Since partnering with Ashton Logistics, my weekly earnings have
-              increased by over 30%. Their team finds me loads that pay well
-              above market rates, and I never have to worry about paperwork."
-            </p>
+           
+       <h1>David R.</h1>
+       <p>★★★★★</p>
+       <p>
+        I've been running my reefer truck for years, and before Ashton Logistics, I was always stressing about my next load. Now, they reliably hook me up so I can focus on growing my business and enjoying some peace of mind
+        </p>
           </div>
         </div>
-        <div class="carousel-item bg-white text-black"">
+        <div class="carousel-item bg-white text-black rounded">
           <div class="carousalItem">
-            <img src="pexels-baobab-photos-2149382979-30938750.jpg" alt="" />
-            <h1>David Rodriguez</h1>
-            <p>
-              "Since partnering with Ashton Logistics, my weekly earnings have
-              increased by over 30%. Their team finds me loads that pay well
-              above market rates, and I never have to worry about paperwork."
-            </p>
+          <h1>Mark D.</h1>
+          <p> ★★★★★</p>
+          <p>Before Ashton Logistics, hunting for solid flatbed loads was a total drag—I was always hustling and stressing out. Then they stepped in, hooking me up with top brokers and killer loads that really pay. Now, I just pick up, secure, and deliver. My wallet’s fatter, and I’ve got more time to enjoy the ride. Love working with them.
+          </p>
           </div>
         </div>
         <div class="carousel-item bg-white text-black">
-          <div class="carousalItem bg-white text-black"">
-            <img src="pexels-baobab-photos-2149382979-30938750.jpg" alt="" />
-            <h1>David Rodriguez Owner</h1>
+          <div class="carousalItem bg-white text-black">
+          
+            <h1>John M.</h1>
+            <p>★★★★★</p>
             <p>
-              "Since partnering with Ashton Logistics, my weekly earnings have
-              increased by over 30%. Their team finds me loads that pay well
-              above market rates, and I never have to worry about paperwork."
+              We started as a small dry van company, always hustling for the next load. Then Ashton Logistics stepped in—connecting us with top brokers and consistent quality loads. This partnership freed us to focus on service excellence and real growth, turning challenges into lasting success. Highly recommended!
+
+
             </p>
+          </div>
+        </div>
+        <div class="carousel-item bg-white text-black rounded"">
+          <div class="carousalItem">
+          <h1>Tony M.
+          </h1>
+          <p> ★★★★★</p>
+          <p>When you're running a hotshot, every second counts. They’re like my pit crew now—they hook me up with red-hot, time-sensitive loads so I can nail fast pick-ups and on-time deliveries. Their rock-solid dispatch has turbocharged my bottom line. Always avai
+          </p>
+          </div>
+        </div>
+        <div class="carousel-item bg-white text-black rounded"">
+          <div class="carousalItem">
+          <h1> Mike L.
+
+          </h1>
+          <p> ★★★★★</p>
+          <p>I've been running my own box truck for a while now, tested a lot of dispatchers and finally found the right one. They send me premium regional and OTR loads straight to my phone regularly—no fuss, just pick up and deliver. Their service has been a real game-changer for my income and business growth. Loving it!!!
+
+          </p>
           </div>
         </div>
       </div>
@@ -521,10 +643,10 @@ img {
         data-bs-target="#carouselExample"
         data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span class="visually-hidden" ></span>
       </button>
       <button
-        class="carousel-control-next"
+        class="carousel-control-next sliderbutton"
         type="button"
         data-bs-target="#carouselExample"
         data-bs-slide="next">
@@ -830,9 +952,9 @@ img {
     <!-- our loading -->
     <div class="herosection1 mb-0  card mb-4 ">
       <div
-        class="herosectiondiv1 d-flex align-items-center justify-content-center mb-5">
+        class="herosectiondiv1 d-flex align-items-center justify-content-center p-5 mb-5">
         <div class="col-6 col-sm text-black p-5">
-          <h1>Ready to Boost Your Earnings?</h1>
+          <h1 >Ready to Boost Your Earnings?</h1>
           <h6>
             Join hundreds of satisfied truckers who've increased their weekly revenue by partnering with Ashton Logistics.
           </h6>
@@ -842,14 +964,15 @@ img {
           <p><i class="fa-solid logo1 fa-check-double"></i><span>NoDedicated dispatcher for your truck</span></p>
           <p><i class="fa-solid logo1 fa-check-double"></i><span>No forced dispatch - you choose your loads</span></p>
 
-          <button type="button" class="btn btn-warning mt-2">
+          <button type="button" class="btn btn-light callNow mt-2">
             Get Your First Load →
           </button>
-          <button type="button" class="btn btn-dark mt-2">Call Us Now</button>
+          <button type="button" class="btn btn-dark mt-2 p-2" >Call Us Now</button>
         </div>
         <div class="col-6 col-sm">
           <div class="card p-4 m-1 mb-0">
-            <h1>request Load Option</h1>
+            <h1 class="text-center">Calculate Your Earning</h1>
+            <hr>
            <div class="row">
             <div class="form-group ">
               <label for="month">Select Duration:</label>
@@ -880,8 +1003,8 @@ img {
             
            
             
-            <button class="mt-2 p-2 rounded" onclick="calculateRate()">Get Rate</button>
-            <h3 class="text-center"> Rate: <span id="result">$0</span></h3>
+            <button class="btn btn-light callNow mt-2 mb-3" onclick="calculateRate()">Get Rate</button>
+            <h1 class="text-center"> Rate: <span id="result">$0</span></h1>
     
           </div>
         </div>
@@ -891,7 +1014,7 @@ img {
      <div class="footer p-3">
       
       <div class="footer1 ">
-        <li><a class="text-decoration-none text-black" href=""><i class="fa-solid logo1 fa-truck-front"></i><span class="footerashton">Ashton logistic</span></a></li>
+       <a href="/index.html"><img src="/assets/website_logo.jpg" height="70px" width="100px" alt=""></a>
         <p >Premium truck dispatching services with no upfront fees. We connect you with exclusive loads from 200+ brokers nationwide.</p>
         <div class="d-flex  footerlogo ">
           <li ><a href=""><i class="fa-brands footerlogo fa-facebook"></i></a></li>
@@ -902,7 +1025,7 @@ img {
       </div>
    
       <div class="footer1    ">
-        <h3>Quick links</h3>
+        <h2>Quick links</h2>
         <li><a class="links" href="">Home</a></li>
         <li><a  class="links" href="">Services</a></li>
         <li><a  class="links" href="">About Us</a></li>
@@ -913,7 +1036,7 @@ img {
         
       </div>
       <div class="footer1">
-        <h3>Our Services </h3>
+        <h2>Our Services </h2>
         <li><a class="links" href="">Dry Van Dispatching</a></li>
         <li><a  class="links" href="">Reefer Dispatching</a></li>
         <li><a  class="links" href="">Flatbed Dispatching</a></li>
@@ -923,10 +1046,10 @@ img {
 
       </div>
       <div class="footer1 ">
-        <h3>Contact US </h3>
-        <li><i class="fa-solid fa-location-dot footerlogo"></i><span>hwfeiuhwhefiuw</span></li>
-        <li><i class="fa-solid fa-phone-volume"></i><span>(555) 123-4567</span></li>
-        <li><i class="fa-solid fa-message"></i><span>info@ashtonlogistics.com</span></li>
+        <h2>Contact US </h2>
+        <li><i class="fa-solid fa-location-dot m-2"></i><span>hwfeiuhwhefiuw</span></li>
+        <li><i class="fa-solid fa-phone-volume m-2"></i><span>(555) 123-4567</span></li>
+        <li><i class="fa-solid fa-message m-2"></i><span>ashtonlogistics.com</span></li>
 
         
 
