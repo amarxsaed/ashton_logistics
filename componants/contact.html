@@ -18,10 +18,13 @@
       crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet" />
+      <link rel="stylesheet" href="/index.css">
     <style>
+    
       .herosection {
         height: 100vh;
         padding-top: 60px;
@@ -119,83 +122,16 @@
 background-color: #1e3a8a;
 color: white;
       }
-      .footer{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        background-color: #1E40AD;
-        
-      }
-      
-      
-      .footer1{
-        list-style: none;
-        width: 200px;
-        
-
-      }
-      .footerlogo{
-        gap: 20px;
-        font-size: 10px;
-        
-color: black;
-      }
-     .links{
-      list-style: none;
-      text-decoration: none;
-     }
-.footer1 li{
-  font-size: 15px;
-  margin-bottom: 15px;
-  color: white;
-  
-}
-.footer1 li a{
-  color: white;
-  
-}
+     
 .carousel-inner{
   height: 300px;
 
 }
-.end{
-    background-color: #1e3a8a;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  align-items: center;
-  color: white;
-  flex-wrap: wrap;
-}
-.enddiv1{
-  list-style: none;
-  display: flex;
-  gap: 10px;
-}
-.fullfooter{
-    background-color: #1e3a8a;
-    color: white;
-}
+
 .fulltable{
   padding: 0px 80px 0px 80px;
 }
-.footerlogo{
-    color: #F97316;
-    margin: 10px;
-    font-size: 20px;
-}
-.footerlogo1{
-    color: black;
-    margin: 7px;
-    font-size: 30px;
-   
-   
- 
-}
-.footerashton{
-    font-size: 3vw;
-    font-weight: 600;
-}
+
 .herosectiondiv1 {
       background-color: white;
           padding-top: 100px;
@@ -213,9 +149,7 @@ color: black;
             
         }
 @media only screen and (max-width: 700px) {
-        .footer1{
-          width: 200px;
-        }
+        
         .herosectiondiv1 {
           display: flex;
           flex-direction: column;
@@ -241,9 +175,7 @@ color: black;
       }
       
       @media only screen and (max-width: 400px) {
-        .footer1{
-          width: 100%;
-        }
+        
         
         .fulltable{
             padding: 4px;
@@ -263,51 +195,47 @@ color: black;
   </head>
   <body>
     <!--navbar  -->
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary  w-100 position-fixed z-2">
-        <div class="container-fluid">
-          <a class="navbar-brand d-flex" href="#">
-            <i class="fa-solid fa-truck logo p-2"></i>
-            <h2>Ashton Logistics</h2>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg  w-100 position-fixed   z-2" style=" background-color:black;">
+      <div class="container-fluid">
+       <img src="/assets/website_logo.jpg" height="70px" width="100px" alt="">
+       
+        <button
+          class="navbar-toggler callNow "
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+          <ul
+            class="navbar-nav me-auto mb-2 mx-auto d-flex justify-content-center  " >
+            <li class="nav-item ">
+              <a class="nav-link active text-white " aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white " aria-current="page" href="/componants/services.html"
+                >Service</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="/componants/Blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="/componants/About.html">About</a>
+            </li>
+           <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="/componants/contact.html">Contact</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-light callNow">
+            <i class="fa-solid fa-phone"></i>Call Now
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul
-              class="navbar-nav me-auto mb-2 mx-auto d-flex justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/componants/services.html
-                "
-                  >Service</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/componants/Blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/componants/About.html">About</a>
-              </li>
-              </li> <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/componants/contact.html">Contact</a>
-              </li>
-            </ul>
-            <button type="button" class="btn btn-warning">
-              <i class="fa-solid fa-phone"></i>Call Now
-            </button>
-          </div>
         </div>
-      </nav> 
+      </div>
+    </nav>
 
 <!-- herosectio -->
 <div class="herosection1">
@@ -512,62 +440,57 @@ color: black;
     </div>
 </div>
 <!-- footer -->
-     <div class="footer mb-0">
-  
+<div class="footer p-3">
       
-        <div class="footer1 "> 
-          <li><a class="text-decoration-none text-black" href=""><i class="fa-solid footerlogo fa-truck-front"></i><span class="footerashton ">Ashton Logistics</span></a></li>
-          <p >Premium truck dispatching services with no upfront fees. We connect you with exclusive loads from 200+ brokers nationwide.</p>
-          <div class="d-flex  footerlogo1 ">
-            <li ><a href=""><i class="fa-brands footerlogo1 fa-facebook"></i></a></li>
-            <li><a href=""><i class="fa-solid footerlogo1 fa-link-slash"></i></a></li>
-            <li><a href=""><i class="fa-brands footerlogo1 fa-twitter"></i></a></li>
-            <li><a href=""><i class="fa-brands footerlogo1 fa-square-instagram"></i></a></li>
-          </div>
-        </div>
-     
-        <div class="footer1    ">
-          <h3>Quick links</h3>
-          <li><a class="links" href="">Home</a></li>
-          <li><a  class="links" href="">Services</a></li>
-          <li><a  class="links" href="">About Us</a></li>
-  
-          <li><a  class="links" href="">Blog</a></li>
-          <li><a  class="links" href="">Contact</a></li>
-  
-          
-        </div>
-        <div class="footer1">
-          <h3>Our Services </h3>
-          <li><a class="links" href="">Dry Van Dispatching</a></li>
-          <li><a  class="links" href="">Reefer Dispatching</a></li>
-          <li><a  class="links" href="">Flatbed Dispatching</a></li>
-  
-          <li><a  class="links" href="">Box Truck Dispatching</a></li>
-          <li><a  class="links" href="">Hotshot Dispatching</a></li>
-  
-        </div>
-        <div class="footer1 ">
-          <h3>Contact US </h3>
-          <li><i class="fa-solid fa-location-dot footerlogo"></i><span>hwfeiuhwhefiuw</span></li>
-          <li><i class="fa-solid  footerlogo fa-phone-volume"></i><span>(555) 123-4567</span></li>
-          <li><i class="fa-solid  footerlogo fa-message"></i><span>info@ashtonlogistics.com</span></li>
-  
-          
-
-        </div>
-       <hr>
-       </div>
-      
-       <div class="end">
-        <p> © 2025 Ashton Logistics. All rights reserved.</p>
-        <div class="enddiv1">
-           
-            <li><a href="">
-                Terms of Service</a></li>
-            <li><a href="">Privacy Policy</a></li>
-        </div>
+  <div class="footer1 ">
+   <a href="/index.html"><img src="/assets/website_logo.jpg" height="70px" width="100px" alt=""></a>
+    <p >Premium truck dispatching services with no upfront fees. We connect you with exclusive loads from 200+ brokers nationwide.</p>
+    <div class="d-flex  footerlogo1 ">
+      <li ><a href=""><i class="fa-brands footerlogo fa-facebook"></i></a></li>
+      <li><a href=""><i class="fa-solid footerlogo fa-link-slash"></i></a></li>
+      <li><a href=""><i class="fa-brands footerlogo fa-twitter"></i></a></li>
+      <li><a href=""><i class="fa-brands footerlogo fa-square-instagram"></i></a></li>
     </div>
+  </div>
+
+  <div class="footer1    ">
+    <h2>Quick links</h2>
+    <li><a class="links" href="/index.html">Home</a></li>
+    <li><a  class="links" href="/componants/services.html">Services</a></li>
+    <li><a  class="links" href="/componants/About.html">About Us</a></li>
+
+    <li><a  class="links" href="/componants/Blog.html">Blog</a></li>
+    <li><a  class="links" href="/componants/contact.html">Contact</a></li>
+
+    
+  </div>
+  <div class="footer1">
+    <h2>Our Services </h2>
+    <li><a class="links" href="">Dry Van Dispatching</a></li>
+    <li><a  class="links" href="">Reefer Dispatching</a></li>
+    <li><a  class="links" href="">Flatbed Dispatching</a></li>
+
+    <li><a  class="links" href="">Box Truck Dispatching</a></li>
+    <li><a  class="links" href="">Hotshot Dispatching</a></li>
+
+  </div>
+  <div class="footer1 ">
+    <h2>Contact US </h2>
+    <li><i class="fa-solid fa-location-dot m-2"></i><span>hwfeiuhwhefiuw</span></li>
+    <li><i class="fa-solid fa-phone-volume m-2"></i><span>(555) 123-4567</span></li>
+    <li><i class="fa-solid fa-message m-2"></i><span>ashtonlogistics.com</span></li>
+
+    
+
+  </div>
+ </div>
+ <div class="end">
+  <p> © 2025 Ashton Logistics. All rights reserved.</p>
+  <div class="enddiv1">
+      <li><a href="">Terms of Service</a></li>
+      <li><a href="">Privacy Policy</a></li>
+  </div>
+</div>
    </div>
   </body>
 </html>
