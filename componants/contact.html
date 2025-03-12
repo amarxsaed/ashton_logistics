@@ -136,11 +136,9 @@ color: white;
       background-color: white;
           padding-top: 100px;
           width: 100%;
+          padding: 100px;
         }
-        .formsection1{
-            color: white;
-           
-        }
+       
         .map{
             border-radius: 15px;
            
@@ -148,21 +146,34 @@ color: white;
         .accordion-item{
             
         }
-@media only screen and (max-width: 700px) {
+        .herosectiondiv2{
+margin-top: -65px;
+        }
+        .readytogetstart{
+          padding: 40px;
+          width: 75%;
+          margin: auto;
+        }
+      
+@media only screen and (max-width: 800px) {
         
         .herosectiondiv1 {
           display: flex;
           flex-direction: column;
+          padding: 0px;
+            margin: 0px;
+            width: 100%;
+           
           
         }
-        .formsection1{
-           
-            padding: 0px;
-            margin: 0px;
-           
+        .herosectiondiv2{
+margin-top: 10px;
         }
-        
-       
+        .readytogetstart{
+          padding: 10px;
+          width: 100%;
+
+        }
        
       
     }
@@ -171,6 +182,7 @@ color: white;
         .rounded{
             width: 100%;
         }
+       
 
       }
       
@@ -181,8 +193,11 @@ color: white;
             padding: 4px;
         }
         .herosectiondiv1 {
-          display: flex;
+         
           flex-direction: column;
+         
+         
+      
 
         }
     
@@ -239,71 +254,73 @@ color: white;
 
 <!-- herosectio -->
 <div class="herosection1">
-    <div class=" card shadow-none p-3 m-3  bg-light rounded">
+    <div class="m- ">
         <div
-          class="herosectiondiv1  d-flex align-items-center justify-content-center formsection1 p-5 ">
+          class="herosectiondiv1  d-flex align-items-center justify-content-center formsection1  ">
           <div class=" text-black ">
             <h1>Get Start</h1>
             <p>Fill out the form below to start receiving high-paying loads.</p>
             <div class="form-group">
-                <label for="usr"><b>Company Name*</b></label>
+                <label for="usr">Company Name*</label>
                 <input type="text" class="form-control" id="usr" />
               </div>
               <div class="form-group">
-                <label for="usr"><b>MC Number</b></label>
+                <label for="usr">MC Number</label>
                 <input type="text" class="form-control" id="usr" />
               </div>
               <div class="form-group">
-                <label for="sel1"><b>Select Truck Type*</b></label>
+                <label for="sel1">Select Truck Type*</label>
                 <select class="form-control" id="sel1">
-                  <option><b>Dry van</b></option>
+                  <option>Dry van</option>
                   <option>reefer</option>
                   <option>box truck</option>
                   <option>Hotshot</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="usr"><b>Your Name*</b></label>
+                <label for="usr">Your Name*</label>
                 <input type="text" class="form-control" id="usr" />
               </div>
               <div class="form-group">
-                <label for="usr"><b>Email*</b></label>
+                <label for="usr">Email*</label>
                 <input type="text" class="form-control" id="usr" />
               </div>
               <div class="form-group">
-                <label for="usr"><b>Phone Number*</b></label>
+                <label for="usr">Phone Number*</label>
                 <input type="text" class="form-control" id="usr" />
               </div>
               <div class="form-group ">
-                <label for="usr"><b>Current Zip Code*</b></label>
+                <label for="usr">Current Zip Code*</label>
                 <input type="text" class="form-control" id="usr" />
               </div>
               <div class="form-group">
-                <label for="usr"><b>Preferred State (Optional)</b></label>
+                <label for="usr">Preferred State (Optional)</label>
                 <input type="text" class="form-control" id="usr" />
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"><b>Additional Information (Optional)</b></label>
+                <label for="exampleFormControlTextarea1" class="form-label">Additional Information (Optional)</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
               <div>
-                <label for="formFileLg" class="form-label"><b>Choose file</b></label>
+                <label for="formFileLg" class="form-label">Choose file</b></label>
                 <input class="form-control form-control-lg" id="formFileLg" type="file">
               </div>
               <button type="button" class="btn btn-warning mt-3 w-100 p-2"><b>Submit Request</b></button>
     
     
           </div>
-          <div class=" text-black ">
+          <div class=" text-black herosectiondiv2">
             <h1>Contact Information</h1>
-            <p>Have question? Reach out to us directly
+            <p class="opacity-50">Have question? Reach out to us directly
             </p>
-            <p><span ><b>Phone:</b></span>(555) 123-4567</p>
-            <p><span ><b>Email: </b></span> info@ashtonlogistics.com</p>
-            <p><span ><b>Address: </b></span>Bensalem, Pennsylvania, USA</p>
+            <div class="d-flex flex-wrap  ">
+              <p  class="card mx-1 p-2"><span ><b>Phone:</b></span>(555) 123-4567</p>
+            <p class="card mx-1 p-2 "><span ><b>Email: </b></span> info@ashtonlogistics.com</p>
+            <p class="card mx-1 p-2"><span ><b>Address: </b></span>Bensalem, Pennsylvania, USA</p>
+            </div>
             <p><b>Business hours:</b></p>
-            <p> Load Booking: 24/7</p>
-            <p> Support: 24/7</p>
+            <p class="opacity-50"> Load Booking: 24/7</p>
+            <p class="opacity-50"> Support: 24/7</p>
             <div>
                 <iframe class="w-100 rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2352.893236601694!2d74.31708339999999!3d31.467683499999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919078306e5e50d%3A0x10ef6f4d532b68f!2sAAA%20Digital!5e1!3m2!1sen!2s!4v1741239169290!5m2!1sen!2s" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -314,14 +331,15 @@ color: white;
       </div>
 </div>
 <!-- ready to get started? -->
- <div class="card p-5 m-3">
+ <hr>
+ <div class="  readytogetstart">
     <h1 class="text-center">Ready to Get Started?</h1>
     <p class="text-center">Follow these simple steps to begin working with Ashton Logistics:</p>
-    <div class="card p-4  shadow-lg mb-4  bg-white rounded">
+    <div class="card shadow-sm p-3 mb-2 bg-white rounded ">
         <h6 class="text-primary"><b>Step 1: Contact Us</b></h6>
         <p>Fill out our contact form, call us directly, or send us an email to express your interest in our dispatching services.</p>
     </div>
-    <div class="card p-4 shadow-lg mb-4 bg-white rounded">
+    <div class="card shadow-sm p-3 mb-2 bg-white rounded">
         <h6 class="text-primary"><b>Step 2: Submit Your Carrier Packet</b></h6>
         <p>Fill out our contact form, call us directly, or send us an email to express your interest in our dispatching services.</p>
         <li>MC Authority Letter</li>
@@ -329,18 +347,19 @@ color: white;
         <li>Certificate of Insurance</li>
 
     </div>
-    <div class="card p-4  shadow-lg mb-4 bg-white rounded">
+    <div class="card shadow-sm p-3 mb-2 bg-white rounded">
         <h6 class="text-primary"><b>Step 3: Discuss Your Preferences</b></h6>
         <p>We’ll schedule a call to discuss your preferred lanes, rates, and any specific requirements you may have.</p>
     </div>
-    <div class="card p-4 shadow-lg mb-4 bg-white rounded">
+    <div class="card shadow-sm p-3 mb-2 bg-white rounded">
         <h6 class="text-primary"><b>Step 4: Start Receiving Loads</b></h6>
         <p>Once everything is set up, we’ll begin sending you load options that match your preferences. You choose which loads to accept, and we’ll handle the rest</p>
     </div>
    
  </div>
+ <hr>
  <!-- frequently ask question -->
- <div class=" m-3 card p-4">
+ <div class=" m-3  p-4 ">
     <h1 class="text-center">Frequently Asked Questions</h1>
     <p class="text-center">Get answers to common questions about our dispatching services.</p>
     <div class="accordion accordion-flush p-2 rounded" id="accordionFlushExample">
@@ -439,11 +458,91 @@ color: white;
           </div>
     </div>
 </div>
+<!-- what our client want -->
+
+
+<div id="carouselExample"  class="carousel slide bg-black  mb-4 p-5" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+  <div class="ourclient text-center">
+    <h1 class="text-white">What Our Clients Say</h1>
+    <p class="text-light">Don't just take our word for it. Hear from the truckers who've transformed their businesses with Ashton Logistics.</p>
+  </div>
+  
+  <div class="carousel-inner bg-white rounded shadow">
+    <div class="carousel-item active">
+      <div class="carousalItem p-4 text-center">
+        <h1>David R.</h1>
+        <p>★★★★★</p>
+        <p >I've been running my reefer truck for years, and before Ashton Logistics, I was always stressing about my next load. Now, they reliably hook me up so I can focus on growing my business and enjoying some peace of mind.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="carousalItem p-4 text-center">
+        <h1>Mark D.</h1>
+        <p>★★★★★</p>
+        <p>Before Ashton Logistics, hunting for solid flatbed loads was a total drag—I was always hustling and stressing out. Then they stepped in, hooking me up with top brokers and killer loads that really pay. Now, I just pick up, secure, and deliver. My wallet’s fatter, and I’ve got more time to enjoy the ride. Love working with them.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="carousalItem p-4 text-center">
+        <h1>John M.</h1>
+        <p>★★★★★</p>
+        <p>We started as a small dry van company, always hustling for the next load. Then Ashton Logistics stepped in—connecting us with top brokers and consistent quality loads. This partnership freed us to focus on service excellence and real growth, turning challenges into lasting success. Highly recommended!</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="carousalItem p-4 text-center">
+        <h1>Tony M.</h1>
+        <p>★★★★★</p>
+        <p>When you're running a hotshot, every second counts. They’re like my pit crew now—they hook me up with red-hot, time-sensitive loads so I can nail fast pick-ups and on-time deliveries. Their rock-solid dispatch has turbocharged my bottom line.</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="carousalItem p-4 text-center">
+        <h1>Mike L.</h1>
+        <p>★★★★★</p>
+        <p>I've been running my own box truck for a while now, tested a lot of dispatchers and finally found the right one. They send me premium regional and OTR loads straight to my phone regularly—no fuss, just pick up and deliver. Their service has been a real game-changer for my income and business growth. Loving it!!!</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- search our news paper -->
+ <div class="card text-center mb-2   newsletter">
+  <h3>Subscribe to Our Newsletter</h3>
+  <p class="opacity-50">Get the latest trucking industry news, tips, and exclusive load opportunities delivered straight to your inbox.</p>
+  <form class="d-flex ">
+    <input class="form-control mr-sm-2 mx-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn callNow my-2 my-sm-0" type="submit">Search</button>
+  </form>
+ </div>
 <!-- footer -->
 <div class="footer p-3">
       
   <div class="footer1 ">
-   <a href="/index.html"><img src="/assets/website_logo.jpg" height="70px" width="100px" alt=""></a>
+   <a href="/index.html"><img src="/assets/website_logo.jpg" class="ashtonfooter" height="70px" width="100px" alt=""></a>
     <p >Premium truck dispatching services with no upfront fees. We connect you with exclusive loads from 200+ brokers nationwide.</p>
     <div class="d-flex  footerlogo1 ">
       <li ><a href=""><i class="fa-brands footerlogo fa-facebook"></i></a></li>

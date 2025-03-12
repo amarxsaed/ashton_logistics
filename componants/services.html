@@ -26,7 +26,7 @@
       .herosection {
         height: 70vh;
         padding-top: 60px;
-        background-color: #1e3a8a;
+    
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -37,8 +37,9 @@
         
       }
       .dispatchin-solution {
-        height: 35vh;
-        margin-bottom: -20px;
+        height: 10vh;
+     
+      margin-top: 40px;
         color: #1e3a8a;
         display: flex;
         flex-direction: column;
@@ -47,9 +48,8 @@
         text-align: center;
       }
      .dispatching-services {
-        height: 35vh;
-        margin-bottom: -20px;
-        
+        height: 20vh;
+  margin-top: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -58,7 +58,7 @@
       }
       .we-compare{
       
-        
+       
         display: flex;
         flex-direction: column;
         padding: 15px;
@@ -90,8 +90,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
-        padding: px;
+        gap: 35px;
+        padding: 11px;
       }
       .text {
         text-decoration: none;
@@ -119,9 +119,7 @@ color: white;
 .fulltable{
   padding: 0px 80px 0px 80px;
 }
-.herosectiondiv1 {
-          background-color: #1E40AD;
-        }
+
         .formsection1{
             color: white;
         }
@@ -147,10 +145,7 @@ color: white;
         .fulltable{
             padding: 4px;
         }
-        .herosectiondiv1 {
-          display: flex;
-          flex-direction: column;
-        }
+     
         .formsection{
         width: 100%;
         }
@@ -208,16 +203,16 @@ color: white;
 
 
     <!-- herosection -->
-    <div>
+  
       <div class="herosection w-100 ">
-        <h1 style="color: white;">Our Dispatching Services</h1>
+        <h1 style="color: white;">Premium Truck Dispatching Services
+        </h1>
         <p>
-          We provide premium dispatching services for all truck types with no
-          upfront fees. Pay only after you get paid by the broker.
+          We connect truckers with exclusive, high-paying loads from our network of 200+ brokers nationwide. No upfront fees - pay only after you get paid.
         </p>
       </div>
 
-      <div class="dispatchin-solution p-4 ">
+      <div class="dispatchin-solution  ">
         <h1>Comprehensive Dispatching Solutions</h1>
         <p class="text-black">
           Our dispatching services are designed to maximize your earnings while
@@ -289,7 +284,7 @@ color: white;
       <div class="we-compare">
         <div class="headcompare"><h3>How We Compare</h3>
             <p>See how Ashton Logistics stands out from other dispatching services</p></div>
-     
+     <!-- table -->
         <div class="  fulltable">
             <table class="table ">
                 <thead class="table-dark">
@@ -410,85 +405,401 @@ color: white;
               </table>
         </div>
     </div>
- 
-    <div class="herosection1">
-        <div
-          class="herosectiondiv1 d-flex align-items-center justify-content-center ">
-          <div class="col-6 col-sm text-black p-3 formsection1 text-white">
-            <h1 class="text-white">Ready to Boost Your Earnings?</h1>
-            <h6>
-              Join hundreds of satisfied truckers who've increased their weekly revenue by partnering with Ashton Logistics.
-            </h6>
-            <p><i class="fa-solid logo1 fa-check-double"></i><span >No upfront fees - pay only after you get paid</span></p>
-            <p><i class="fa-solid logo1 fa-check-double"></i><span>Access to exclusive loads from 200+ brokers</span></p>
-            <p><i class="fa-solid logo1 fa-check-double"></i><span>Complete paperwork management</span></p>
-            <p><i class="fa-solid logo1 fa-check-double"></i><span>NoDedicated dispatcher for your truck</span></p>
-            <p><i class="fa-solid logo1 fa-check-double"></i><span>No forced dispatch - you choose your loads</span></p>
-  
-            <button type="button" class="btn btn-warning mt-2">
-              Get Your First Load →
-            </button>
-            <button type="button" class="btn btn-dark mt-2">Call Us Now</button>
+ <!-- our dispatchin -->
+ <div class="text-center mt-2">
+  <h1 class="mb-4">Our Dispatching Services</h1>
+
+ <p>We specialize in dispatching for all types of trucks, with competitive rates and no upfront fees</p>
+  <div class="d-flex justify-content-center flex-wrap" style="font-family: Orbitron;">
+    <div>
+      <button class="btn-custom" onclick="showContent('hello')">
+        <i class="fa-solid logo2 fa-truck"></i>Dry Van
+      </button>
+    </div>
+    <div>
+      <button class="btn-custom" onclick="showContent('fast')">
+        <i class="fa-solid logo2 fa-asterisk"></i> Reefer
+      </button>
+    </div>
+    <div>
+      <button class="btn-custom" onclick="showContent('slow')">
+        <i class="fa-solid logo2 fa-box"></i> Flatbed
+      </button>
+    </div>
+    <div>
+      <button class="btn-custom" onclick="showContent('veryslow')">
+        <i class="fa-solid logo2 fa-truck-ramp-box"></i>Hotshot
+      </button>
+    </div>
+    <div>
+      <button class="btn-custom" onclick="showContent('veryfast')">
+        <i class="fa-solid logo2 fa-box"></i>Box Truck
+      </button>
+    </div>
+   
+  </div>
+</div>
+<div class="mb-2">
+  <div id="hello" class="content-div container   p-2 card  ">
+    <div class=" text-start" >
+       <div class="content-div1 p-1 " > <h2><i class="fa-solid logo1 fa-truck"></i>Dry Van Dispatching</h2>
+          <p>
+            Our most popular service. We connect dry van owners with high-paying
+            loads from major brokers nationwide, with a focus on consistent,
+            reliable freight.
+          </p></div>
+      </div>
+      <div class="mx-5">
+        <div class="card p-2  text-center " style="background-color: #0056b3;color: aliceblue;">
+          <div class="row">
+            <h5>Weekly Earnings</h5>
           </div>
-          <div class="col-6 formsection1 p-5">
-            <div class="card p-4 m-1 mb-0">
-              <h1>request Load Option</h1>
-             <div class="row">
-              <div class="form-group col-6">
-                <label for="usr">Name</label>
-                <input type="text" class="form-control" id="usr" />
-              </div>
-              <div class="form-group col-6">
-                <label for="usr">Company Name</label>
-                <input type="text" class="form-control" id="usr" />
-              </div>
-             </div>
-             <div class="row ">
-              <div class="form-group col-6">
-                <label for="usr">Name</label>
-                <input type="text" class="form-control" id="usr" />
-              </div>
-              <div class="form-group col-6">
-                <label for="usr">Company Name</label>
-                <input type="text" class="form-control" id="usr" />
-              </div>
-             </div>
-             <div class="row">
-              <div class="form-group col-12">
-                <label for="usr">Name</label>
-                <input type="text" class="form-control" id="usr" />
-              </div>
-             </div>
-             <div class="row">
-              <div class="form-group col-6">
-                <label for="sel1">truck type</label>
-                <select class="form-control" id="sel1">
-                  <option>Dry van</option>
-                  <option>reefer</option>
-                  <option>box truck</option>
-                  <option>Hotshot</option>
-                </select>
-              </div>
-              <div class="form-group col-6">
-                <label for="usr">Company Name</label>
-                <input type="text" class="form-control" id="usr" />
-              </div>
-             </div>
-  
-              
-             
-              
-              <button class="mt-2 p-2 rounded">Get Your First Load →</button>
+          <div class="row">
+            <h2>$8,000+</h2>
+          </div>
+          <div class="row">
+            <div>
+              <small>Fee</small>
+              <p>4%</p>
+            </div>
+            <div class="insideofcard">
+              <small>Rate Per Mile</small>
+              <h6>$20.00 - $3.00 per mile</h6>
             </div>
           </div>
         </div>
-
+        <div class="text-start p-2">
+          <h4>Benefits</h4>
+          <li>Access to exclusive dry van loads</li>
+          <li>Higher paying freight than load boards</li>
+          <li>Dedicated dispatcher for your truck</li>
+          <li>Paperwork and broker communication handled</li>
+        </div>
       </div>
-     
+
+      <div class="card text-center">
+        <h4 class="m-2">POPULAR ROUTES</h4>
+        <div class="p-2 border  rounded m-2">
+          <h6>Los Angeles, CA – Chicago, IL - $2.60</h6>
+          <small>2,000 miles</small>
+        </div>
+        <div class="p-2 border rounded  m-2">
+          <h6>Los Angeles, CA – New York, NY - $2.55</h6>
+          <small>2,800 miles</small>
+        </div>
+        <div class="p-2 border rounded  m-2">
+          <h6>Miami, FL – Los Angeles, CA - $2.90</h6>
+          <small>2,500 miles</small>
+        </div>
+        <div class="p-2 border rounded m-2">
+          <h6>Dallas, TX – Atlanta, GA - $2.70</h6>
+          <small>800 miles</small>
+        </div>
+      </div>
+    </div>
+ 
+
+  <div id="fast" class="content-div container   p-2 card  ">
+      <div class=" text-start" >
+         <div class="content-div1 p-1 " > <h2>   <i class="fa-solid logo1 fa-asterisk"></i>Reefer Dispatching</h2>
+            <p>
+              Specialized in temperature-controlled freight, our reefer dispatching service ensures you get premium rates for the additional expertise required.
+            </p></div>
+        </div>
+        <div class="mx-5">
+          <div class="card p-2  text-center " style="background-color: #0056b3;color: aliceblue;">
+            <div class="row">
+              <h5>Weekly Earnings</h5>
+            </div>
+            <div class="row">
+              <h2>$9,000+</h2>
+            </div>
+            <div class="row">
+              <div>
+                <small>Fee</small>
+                <p>4%</p>
+              </div>
+              <div class="insideofcard">
+                <small>Rate Per Mile</small>
+                <h6>$2.50 - $3.50 per mile</h6>
+              </div>
+            </div>
+          </div>
+          <div class="text-start p-2">
+            <h4>Benefits</h4>
+            <li>Premium temperature-controlled loads</li>
+            <li>Reduced deadhead miles</li>
+            <li>Higher rate per mile than industry average</li>
+            <li>Expert negotiation for detention and layover</li>
+          </div>
+        </div>
+
+        <div class="card text-center">
+          <h4 class="m-2">POPULAR ROUTES</h4>
+          <div class="p-2 border  rounded m-2">
+            <h6>Chicago, IL – Miami, FL - $3.20</h6>
+            <small>1,300 miles</small>
+          </div>
+          <div class="p-2 border rounded  m-2">
+            <h6>Omaha, NE – Los Angeles, CA - $3.15</h6>
+            <small>1,500 miles</small>
+          </div>
+          <div class="p-2 border rounded  m-2">
+            <h6>Kansas City, MO – Philadelphia, PA - $2.95</h6>
+            <small>1,100 miles</small>
+          </div>
+          <div class="p-2 border rounded m-2">
+            <h6>Green Bay, WI – Houston, TX - $3.00</h6>
+            <small>1,200 miles</small>
+          </div>
+        </div>
+      </div>
+
+ <div id="slow" class="content-div container   p-2 card  ">
+        <div class=" text-start" >
+           <div class="content-div1 p-1 " > <h2><i class="fa-solid logo1 fa-box"></i>Flatbed Dispatching</h2>
+              <p>
+                For flatbed operators, we source specialized, high-paying loads that maximize your earning potential while minimizing deadhead miles.
+              </p></div>
+          </div>
+          <div class="mx-5">
+            <div class="card p-2  text-center " style="background-color: #0056b3;color: aliceblue;">
+              <div class="row">
+                <h5>Weekly Earnings</h5>
+              </div>
+              <div class="row">
+                <h2>$9,000+</h2>
+              </div>
+              <div class="row">
+                <div>
+                  <small>Fee</small>
+                  <p>4%</p>
+                </div>
+                <div class="insideofcard">
+                  <small>Rate Per Mile</small>
+                  <h6>$2.50 - $3.50 per mile</h6>
+                </div>
+              </div>
+            </div>
+            <div class="text-start p-2">
+              <h4>Benefits</h4>
+              <li>Access to premium flatbed loads</li>
+              <li>Specialized in oversized and heavy haul</li>
+              <li>Tarping and accessorial pay negotiation</li>
+              <li>Consistent weekly miles</li>
+            </div>
+          </div>
+  
+          <div class="text-center">
+            <h4 class="m-2">POPULAR ROUTES</h4>
+            <div class="p-2 border  rounded m-2">
+              <h6>St. Louis, MO – Houston, TX - $3.30</h6>
+              <small>900 miles</small>
+            </div>
+            <div class="p-2 border rounded  m-2">
+              <h6>Indianapolis, IN – Dallas, TX - $2.70</h6>
+              <small>800 miles</small>
+            </div>
+            <div class="p-2 border rounded  m-2">
+              <h6>Dallas, TX – Charlotte, NC - $2.60</h6>
+              <small>900 miles</small>
+            </div>
+            <div class="p-2 border rounded m-2">
+              <h6>Columbus, OH – Atlanta, GA - $2.90</h6>
+              <small>550 miles</small>
+            </div>
+          </div>
+        </div>
+    
+  <div id="veryslow" class="content-div container   p-2 card  ">
+          <div class=" text-start" >
+             <div class="content-div1 p-1 " > <h2>  <i class="fa-solid logo1 fa-truck-ramp-box"></i>Hotshot Dispatching</h2>
+                <p>
+                  Specialized in expedited, time-sensitive freight, our hotshot dispatching service connects you with best loads that pay premium rates.
+                </p></div>
+            </div>
+            <div class="mx-5">
+              <div class="card p-2  text-center " style="background-color: #0056b3;color: aliceblue;">
+                <div class="row">
+                  <h5>Weekly Earnings</h5>
+                </div>
+                <div class="row">
+                  <h2>$6,000+</h2>
+                </div>
+                <div class="row">
+                  <div>
+                    <small>Fee</small>
+                    <p>8%</p>
+                  </div>
+                  <div class="insideofcard">
+                    <small>Rate Per Mile</small>
+                    <h6>$1.50 - $2.00 per mile</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="text-start p-2">
+                <h4>Benefits</h4>
+                <li>Time-sensitive, high-priority loads</li>
+                <li>Less competition than standard freight</li>
+                <li>Run the truck with faster turnaround</li>
+                <li>Higher rates for exceptional loads</li>
+              </div>
+            </div>
+    
+            <div class=" text-center">
+              <h4 class="m-2">POPULAR ROUTES</h4>
+              <div class="p-2 border  rounded m-2">
+                <h6>Chicago, IL – Memphis, TN - $2.80</h6>
+                <small>525 miles</small>
+              </div>
+              <div class="p-2 border rounded  m-2">
+                <h6>Indianapolis, IN – Dallas, TX - $2.70</h6>
+                <small>800 miles</small>
+              </div>
+              <div class="p-2 border rounded  m-2">
+                <h6>Dallas, TX – Charlotte, NC - $2.60</h6>
+                <small>900 miles</small>
+              </div>
+              <div class="p-2 border rounded m-2">
+                <h6>Columbus, OH – Atlanta, GA - $2.90</h6>
+                <small>550 miles</small>
+              </div>
+            </div>
+          </div>
+
+ <div id="veryfast" class="content-div container   p-2 card  ">
+            <div class=" text-start" >
+               <div class="content-div1 p-1 " > <h2> <i class="fa-solid logo1 fa-box"></i>Box Truck Dispatching</h2>
+                  <p>
+                    Our box truck dispatching focuses on regional & OTR loads with quick turnarounds and minimal wait times at shippers and receivers.
+                  </p></div>
+              </div>
+              <div class="mx-5">
+                <div class="card p-2  text-center " style="background-color: #0056b3;color: aliceblue;">
+                  <div class="row">
+                    <h5>Weekly Earnings</h5>
+                  </div>
+                  <div class="row">
+                    <h2>$7,000+</h2>
+                  </div>
+                  <div class="row">
+                    <div>
+                      <small>Fee</small>
+                      <p>6%</p>
+                    </div>
+                    <div class="insideofcard">
+                      <small>Rate Per Mile</small>
+                      <h6>$2.00 - $2.50 per mile</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-start p-2">
+                  <h4>Benefits</h4>
+                  <li>Regional & OTR routes available</li>
+                  <li>Less competition than full-size trucks</li>
+                  <li>More loads with competitive rates</li>
+                  <li>Consistent daily or weekly loads</li>
+                </div>
+              </div>
+      
+              <div class=" text-center">
+                <h3 class="m-3">POPULAR ROUTES</h3>
+                <div class="p-2 border  rounded m-2">
+                  <h6>Dallas, TX – Chicago, IL - $2.10</h6>
+                  <small>1,000 miles</small>
+                </div>
+                <div class="p-2 border rounded  m-2">
+                  <h6>Houston, TX – Atlanta, GA - $2.20</h6>
+                  <small>800 miles</small>
+                </div>
+                <div class="p-2 border rounded  m-2">
+                  <h6>Los Angeles, CA – Denver, CO - $2.00</h6>
+                  <small>1,000 miles</small>
+                </div>
+                <div class="p-2 border rounded m-2">
+                  <h6>Miami, FL – New Orleans, LA - $1.50</h6>
+                  <small>600 miles</small>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+ </div>
+
+  
+    <!-- calculator -->
+    <div class="herosection1 mb-0   mb-4  ">
+      <div
+        class="herosectiondiv1 d-flex align-items-center justify-content-center p-5 mb-5">
+        <div class="col-6 col-sm text-black p-5">
+          <h1 >Ready to Boost Your Earnings?</h1>
+          <h6>
+            Join hundreds of satisfied truckers who've increased their weekly revenue by partnering with Ashton Logistics.
+          </h6>
+          <p><i class="fa-solid logo1 fa-check-double"></i><span>No upfront fees - pay only after you get paid</span></p>
+          <p><i class="fa-solid logo1 fa-check-double"></i><span>Access to exclusive loads from 200+ brokers</span></p>
+          <p><i class="fa-solid logo1 fa-check-double"></i><span>Complete paperwork management</span></p>
+          <p><i class="fa-solid logo1 fa-check-double"></i><span>NoDedicated dispatcher for your truck</span></p>
+          <p><i class="fa-solid logo1 fa-check-double"></i><span>No forced dispatch - you choose your loads</span></p>
+
+          <button type="button" class="btn btn-light callNow mt-2">
+            Get Your First Load →
+          </button>
+        
+        </div>
+        <div class="col-6 col-sm">
+          <div class="card p-4 m-1 mb-0">
+            <h1 class="text-center">Calculate Your Earning</h1>
+            <hr>
+           <div class="row">
+            <div class="form-group ">
+              <label for="month">Select Duration:</label>
+              <select id="month" class="form-control">
+                  <option value="3">3 Months</option>
+                  <option value="6">6 Months</option>
+                  <option value="9">9 Months</option>
+                  <option value="12">12 Months</option>
+              </select>
+              <label for="region">Select Region:</label>
+            <select id="region" class="form-control">
+                <option value="Nationwide">Nationwide</option>
+                <option value="Midwest">Midwest</option>
+                <option value="South">South</option>
+                <option value="West">West</option>
+                <option value="East">East</option>
+            </select>
+            <label for="truck">Select Truck Type:</label>
+            <select id="truck" class="form-control">
+                <option value="">Select Truck</option>
+            </select>
+            </div>
+            
+           </div>
+         
+           
+           
+            
+           
+            
+            <button class="btn btn-light callNow mt-2 mb-3" onclick="calculateRate()">Get Rate</button>
+            <h1 class="text-center"> Rate: <span id="result">$0</span></h1>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- slider -->
+   
+     <!-- footer -->
       <div class="footer p-3">
       
         <div class="footer1 ">
-         <a href="/index.html"><img src="/assets/website_logo.jpg" height="70px" width="100px" alt=""></a>
+         <a href="/index.html"><img src="/assets/website_logo.jpg" class="ashtonfooter" height="70px" width="100px" alt=""></a>
           <p >Premium truck dispatching services with no upfront fees. We connect you with exclusive loads from 200+ brokers nationwide.</p>
           <div class="d-flex  footerlogo1 ">
             <li ><a href=""><i class="fa-brands footerlogo fa-facebook"></i></a></li>
@@ -536,5 +847,6 @@ color: white;
             <li><a href="">Privacy Policy</a></li>
         </div>
       </div>
+      <script src="/index.js"></script>
   </body>
 </html>
