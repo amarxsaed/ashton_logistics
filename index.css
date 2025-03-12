@@ -326,7 +326,7 @@ border-radius: 150px;
 .slide-track {
 width: 100%;
 display: flex;
-gap: 3em;
+gap: 4em;
 overflow: hidden;
 }
 
@@ -399,12 +399,18 @@ padding-left: 20px;
   .footer1{
     width: 100%;
   }
+  
   .herosection {
     height: 175vh;
   }
   .card{
    width: 100%;
   }
+  .slideimg {
+    width: 100px;
+    height: 100px;
+
+    }
 
 }
 
